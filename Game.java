@@ -1,4 +1,4 @@
-package tttp;
+
 import java.util.*;
 public class Game {
 	public static  char [][] board = new char[3][3];

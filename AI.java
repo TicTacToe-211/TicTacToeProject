@@ -1,4 +1,3 @@
-package tttp;
 
 public class AI {
 
