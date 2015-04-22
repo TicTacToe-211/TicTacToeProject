@@ -12,7 +12,7 @@ public class XOButton extends JButton implements ActionListener {
 		addActionListener(this);
 	}
 	
-//override
+@Override
 	public void actionPerformed(ActionEvent e){
 		value++;
 		value%=3;
