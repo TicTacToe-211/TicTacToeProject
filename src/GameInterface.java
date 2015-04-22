@@ -48,7 +48,7 @@ public class GameInterface {
 		GameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GameFrame.getContentPane().setLayout(null);
 		
-		JButton button00 = new JButton(game[0][0]);
+		XOButton button00 = new XOButton();
 		button00.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
@@ -56,7 +56,11 @@ public class GameInterface {
 		button00.setBounds(23, 37, 75, 75);
 		GameFrame.getContentPane().add(button00);
 		
-		JButton button01 = new JButton("");
+		XOButton button01 = new XOButton();
+		button01.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		button01.setBounds(103, 37, 75, 75);
 		GameFrame.getContentPane().add(button01);
 		
