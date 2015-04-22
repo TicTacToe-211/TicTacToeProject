@@ -5,7 +5,7 @@ public class XOButton extends JButton implements ActionListener {
 	ImageIcon x;
 	ImageIcon o;
 	int value = 0;
-	/*value: 0 is empty, 1 is x, 2 is o */
+	/*value: 0 is empty, 1 is x, 2 is o. */
 	
 	public XOButton(){
 		x = new ImageIcon(getClass().getResource("X.png"));
