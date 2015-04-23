@@ -1,7 +1,7 @@
 
 import java.util.*;
 public class Game {
-	public static  char [][] board = new char[3][3];
+	public static  char [][] board = new char[4][4];
 	public static int row;
 	public static int col;
 	public static Scanner scan = new Scanner(System.in);
@@ -17,8 +17,8 @@ public class Game {
 
 	public static void main(String[] args){
 		
-		for(int r = 0;r<3; r++){
-			for (int c = 0; c<3; c++){
+		for(int r = 0;r<4; r++){
+			for (int c = 0; c<4; c++){
 				board[r][c] = '_';
 				
 			}
@@ -30,9 +30,11 @@ public class Game {
 		boolean playing = true;
 		
 		while(playing){
-			System.out.println("Please insert row and column\n");
+			System.out.println("Please insert row and column\n "
+					+ "the number should be less than 4");
 			System.out.print("Row: ");
 			row = scan.nextInt() - 1;
+			
 			System.out.print("Column: ");
 			col = scan.nextInt() - 1;
 			turn = 'X';
@@ -73,8 +75,8 @@ public class Game {
 	}
 	
 	public static void printBoard(){
-		for (int i = 0; i<3; i++ ){
-			for (int j = 0; j<3 ; j++){
+		for (int i = 0; i<4; i++ ){
+			for (int j = 0; j<4 ; j++){
 				System.out.print("| ");
 				System.out.print(board[i][j] + " | ");
 			}
@@ -84,56 +86,67 @@ public class Game {
 	
 	public static int gameOver(){
 
-		if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[0][0] == 'X'){
+		if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[2][0] == board[3][0]&& board[0][0]=='X'){
 			return 0;
 		}
-		if(board[0][1] == board[1][1] && board[1][1] == board[2][1] && board[0][1] == 'X')
+		if(board[0][1] == board[1][1] && board[1][1] == board[2][1] && board[2][1] ==board[3][1] && board[0][1]== 'X')
 			return 0;
 		
-		if(board[0][2] == board[1][2] && board[1][2] == board[2][2] && board[0][2] == 'X')
+		if(board[0][2] == board[1][2] && board[1][2] == board[2][2] && board[2][2] ==board[3][2] && board[0][2]=='X')
 			return 0;
 		
-		if(board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][0] == 'X')
+		if(board[0][3] == board[1][3] && board[1][3] == board[2][3] && board[2][3] ==board[3][3] && board[0][3]=='X')
 			return 0;
 		
-		if(board[1][0] == board[1][1] && board[1][0] == board[1][2] && board[1][0] == 'X')
+		if(board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][2] ==board[0][3] && board[0][0]=='X')
 			return 0;
 		
-		if(board[2][0] == board[2][1] && board[2][0] == board[2][2] && board[2][0] == 'X')
+		if(board[1][0] == board[1][1] && board[1][1] == board[1][2] && board[1][2] ==board[1][3] && board[1][0]=='X')
 			return 0;
 		
-		if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] == 'X')
+		if(board[2][0] == board[2][1] && board[2][1] == board[2][2] && board[2][2] ==board[2][3] && board[2][0]=='X')
 			return 0;
 		
-		if(board[2][0] == board[1][1] && board[1][1] == board[0][2] && board[2][0] == 'X')
+		if(board[3][0] == board[3][1] && board[3][1] == board[3][2] && board[3][2] ==board[3][3] && board[3][0]=='X')
 			return 0;
-		// for player O
-		if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[0][0] == 'O'){
-			return 2;
+		
+		if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[2][2] ==board[3][3] && board[0][0]=='X')
+			return 0;
+		
+		if(board[0][3] == board[1][2] && board[1][2] == board[2][1] && board[2][1] ==board[3][0] && board[0][3]=='X')
+			return 0;
+	// for player O 
+		if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[2][0] == board[3][0]&& board[0][0]=='O'){
+			return 0;
 		}
-		if(board[0][1] == board[1][1] && board[1][1] == board[2][1] && board[0][1] == 'O')
-			return 2;
+		if(board[0][1] == board[1][1] && board[1][1] == board[2][1] && board[2][1] ==board[3][1] && board[0][1]== 'O')
+			return 0;
 		
-		if(board[0][2] == board[1][2] && board[1][2] == board[2][2] && board[0][2] == 'O')
-			return 2;
+		if(board[0][2] == board[1][2] && board[1][2] == board[2][2] && board[2][2] ==board[3][2] && board[0][2]=='O')
+			return 0;
 		
-		if(board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][0] == 'O')
-			return 2;
+		if(board[0][3] == board[1][3] && board[1][3] == board[2][3] && board[2][3] ==board[3][3] && board[0][3]=='O')
+			return 0;
 		
-		if(board[1][0] == board[1][1] && board[1][0] == board[1][2] && board[1][0] == 'O')
-			return 2;
+		if(board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][2] ==board[0][3] && board[0][0]=='O')
 		
-		if(board[2][0] == board[2][1] && board[2][0] == board[2][2] && board[2][0] == 'O')
-			return 2;
+		if(board[1][0] == board[1][1] && board[1][1] == board[1][2] && board[1][2] ==board[1][1] && board[1][0]=='O')
+			return 0;
 		
-		if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] == 'O')
-			return 2;
+		if(board[2][0] == board[2][1] && board[2][1] == board[2][2] && board[2][2] ==board[2][3] && board[2][0]=='O')
+			return 0;
 		
-		if(board[2][0] == board[1][1] && board[1][1] == board[0][2] && board[2][0] == 'O')
-			return 2;
+		if(board[3][0] == board[3][1] && board[3][1] == board[3][2] && board[3][2] ==board[3][3] && board[3][0]=='O')
+			return 0;
+		
+		if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[2][2] ==board[3][3] && board[0][0]=='O')
+			return 0;
+		
+		if(board[0][3] == board[1][2] && board[1][2] == board[2][1] && board[2][1] ==board[3][0] && board[0][3]=='O')
+			return 0;
 		int c = 0;
-		for(int i = 0; i<3; i++){
-			for(int j = 0; j<3; j++){
+		for(int i = 0; i<4; i++){
+			for(int j = 0; j<4; j++){
 				if(board[i][j] != '_'){
 					c++;
 				}
