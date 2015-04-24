@@ -1,12 +1,29 @@
 
 import java.util.*;
 public class Game {
-	public static  char [][] board = new char[4][4];
-	public static int row;
-	public static int col;
-	public static Scanner scan = new Scanner(System.in);
-	public static char turn = 'X';
-	public static AI ai;
+	private static  char [][] board = new char[4][4];
+	private static int row;
+	private static int col;
+	private static Scanner scan = new Scanner(System.in);
+	private static char turn = 'X';
+	private static AI ai;
+	
+	public Game(){
+		for(int i = 0; i<board.length;i++){
+			for(int j = 0; j<board[0].length;j++){
+				board[i][j] = ' ';
+			}
+		}
+	}
+	public void play(int x,int y){
+		board[x][y]='x';
+		do{
+			Random random = new Random();
+			 x = random.nextInt(4);
+			y = random.nextInt(4);
+			board[x][y]='o';
+		} while(board[x][y] == ' ');
+	}
 	public static char[][] getBoard() {
 		return board;
 	}
@@ -15,6 +32,8 @@ public class Game {
 		board = b;
 	}
 
+	
+	
 	public static void main(String[] args){
 		
 		for(int r = 0;r<4; r++){

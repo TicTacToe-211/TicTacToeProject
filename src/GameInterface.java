@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
 public class GameInterface {
 
 	private JFrame GameFrame;
-	private String[][] game;
+	private Game game;
 
 	/**
 	 * Launch the application.
@@ -38,19 +38,19 @@ public class GameInterface {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() {
-		game = new String[4][4];
-		game[0][0] = "X";
+	public void initialize() {
 		GameFrame = new JFrame();
 		GameFrame.setTitle("Tic Tac Toe");
 		GameFrame.setResizable(false);
 		GameFrame.setBounds(100, 100, 380, 476);
 		GameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GameFrame.getContentPane().setLayout(null);
+		game = new Game();
 		
-		XOButton button00 = new XOButton();
+		XOButton button00 = new XOButton(0,0);
 		button00.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				game.play(button00.getLocation());
 			}
 		});
 		button00.setBounds(23, 37, 75, 75);
@@ -64,59 +64,59 @@ public class GameInterface {
 		button01.setBounds(103, 37, 75, 75);
 		GameFrame.getContentPane().add(button01);
 		
-		JButton button02 = new JButton("");
+		XOButton button02 = new XOButton();
 		button02.setBounds(184, 37, 75, 75);
 		GameFrame.getContentPane().add(button02);
 		
-		JButton button03 = new JButton("");
+		XOButton button03 = new XOButton();
 		button03.setBounds(265, 37, 75, 75);
 		GameFrame.getContentPane().add(button03);
 		
-		JButton button10 = new JButton("");
+		XOButton button10 = new XOButton();
 		button10.setBounds(23, 118, 75, 75);
 		GameFrame.getContentPane().add(button10);
 		
-		JButton button11 = new JButton("");
+		XOButton button11 = new XOButton();
 		button11.setBounds(103, 118, 75, 75);
 		GameFrame.getContentPane().add(button11);
 		
-		JButton button12 = new JButton("");
+		XOButton button12 = new XOButton();
 		button12.setBounds(184, 118, 75, 75);
 		GameFrame.getContentPane().add(button12);
 		
-		JButton button13 = new JButton("");
+		XOButton button13 = new XOButton();
 		button13.setBounds(265, 118, 75, 75);
 		GameFrame.getContentPane().add(button13);
 		
-		JButton button20 = new JButton("");
+		XOButton button20 = new XOButton();
 		button20.setBounds(23, 199, 75, 75);
 		GameFrame.getContentPane().add(button20);
 		
-		JButton button21 = new JButton("");
+		XOButton button21 = new XOButton();
 		button21.setBounds(103, 199, 75, 75);
 		GameFrame.getContentPane().add(button21);
 		
-		JButton button22 = new JButton("");
+		XOButton button22 = new XOButton();
 		button22.setBounds(184, 199, 75, 75);
 		GameFrame.getContentPane().add(button22);
 		
-		JButton button23 = new JButton("");
+		XOButton button23 = new XOButton();
 		button23.setBounds(265, 199, 75, 75);
 		GameFrame.getContentPane().add(button23);
 		
-		JButton button30 = new JButton("");
+		XOButton button30 = new XOButton();
 		button30.setBounds(23, 280, 75, 75);
 		GameFrame.getContentPane().add(button30);
 		
-		JButton button31 = new JButton("");
+		XOButton button31 = new XOButton();
 		button31.setBounds(103, 280, 75, 75);
 		GameFrame.getContentPane().add(button31);
 		
-		JButton button32 = new JButton("");
+		XOButton button32 = new XOButton();
 		button32.setBounds(184, 280, 75, 75);
 		GameFrame.getContentPane().add(button32);
 		
-		JButton button33 = new JButton("");
+		XOButton button33 = new XOButton();
 		button33.setBounds(265, 280, 75, 75);
 		GameFrame.getContentPane().add(button33);
 		
