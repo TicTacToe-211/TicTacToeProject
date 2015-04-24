@@ -69,6 +69,17 @@ public class GameInterface {
 			numberOfTies++;
 			resetGame();
 		}
+		if(game.isGameOver() == 1){
+			if(game.getWinner()=='x'){
+				numberOfWins++;
+				JOptionPane.showMessageDialog(null, "You won!");
+			}
+			else if(game.getWinner()=='o'){
+				numberOfLosses++;
+				JOptionPane.showMessageDialog(null, "You Lost :(");
+			}
+			resetGame();
+		}
 	}
 	
 	/* this method resets the game, it is only called once game.isGameOver() returns a value other than 0*/

@@ -7,14 +7,13 @@ public class Game {
 	private static Scanner scan = new Scanner(System.in);
 	private static char turn = 'X';
 	private static AI ai;
-	private int turnsCounter = 0;
-	
+	private int turnsCounter;
+	private char winner;
 	public Game(){
-		for(int i = 0; i<board.length;i++){
-			for(int j = 0; j<board[0].length;j++){
-				board[i][j] = ' ';
-			}
-		}
+		resetBoard();
+	}
+	public char getWinner(){
+		return winner;
 	}
 	public Location play(Location location){
 		int x = location.getX();
@@ -32,18 +31,68 @@ public class Game {
 		turnsCounter++;
 		return new Location(x,y);
 	}
+	
+	/* returns -1 when the game is over with no winner,
+	 * returns 1 when the game is over and there is a winner,
+	 * returns 0 when the game is not over yet.
+	 */
 	public int isGameOver(){
 		if(turnsCounter == 8){
 			return -1;
 		}
+		if(isThereAWinner()){
+			return 1;
+		}
 		return 0;
 	}
 	
+	/*resets the game board, emptying all cells*/
 	public void resetBoard(){
 		char[][] clearBoard = new char[4][4];
+		for(int i = 0; i<clearBoard.length;i++){
+			for(int j = 0; j<clearBoard[0].length;j++){
+				clearBoard[i][j] = ' ';
+			}
+		}
 		setBoard(clearBoard);
 		turnsCounter = 0;
 	}
+	
+	/*this method checks if there's a winner, and sets the 'winner' variable to it*/
+	public boolean isThereAWinner(){
+
+		for(int i=0; i<board.length;i++){ 
+			if(board[i][0]==board[i][1]
+			&& board[i][1]==board[i][2]
+			&& board[i][2]==board[i][3]){
+				//checks for columns
+				winner = board[i][0];
+			return true;
+			}
+			if(board[0][i]==board[1][i]
+			&& board[1][i]==board[2][i]
+			&& board[3][i]==board[3][i]){
+				//check for rows
+				winner = board[0][i];
+				return true;
+			}	
+		}
+		if(board[0][0]==board[1][1]
+		&& board[1][1]==board[2][2]
+		&& board[2][2]==board[3][3]){
+			winner = board[0][0];
+			return true;
+		}
+		if(board[0][3]==board[1][2]
+		&& board[1][2]==board[2][1]
+		&& board[2][1]==board[3][0]){
+			winner = board[0][3];
+			return true;
+		}
+		else return false;
+	}
+	
+	/* checks the cell at the given points, returns true if empty */
 	public boolean cellIsEmpty(int x, int y){
 		if(board[x][y]=='x'||board[x][y]=='o'){
 			return false;
@@ -51,6 +100,7 @@ public class Game {
 		else
 		return true;
 	}
+	
 	public static char[][] getBoard() {
 		return board;
 	}

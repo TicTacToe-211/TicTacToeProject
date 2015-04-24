@@ -16,8 +16,8 @@ public class XOButton extends JButton {
 	}
 	public XOButton(int x, int y){
 		this.location = new Location(x,y);
-		this.x = new ImageIcon(getClass().getResource("X.png"));
-		this.o = new ImageIcon(getClass().getResource("o.png"));
+		this.x = new ImageIcon(getClass().getResource("x.png"));
+		this.o = new ImageIcon(getClass().getResource("O.png"));
 	}
 	
 
