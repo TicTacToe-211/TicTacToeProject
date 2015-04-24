@@ -61,9 +61,15 @@ public class GameInterface {
 	private void XOButtonPressed(XOButton button){
 		computerMove =	game.play(button.getButtonLocation());
 		button.setValue('x');
+
 		System.out.println(computerMove);
 		getButtonOfLocation(computerMove).setValue('o');
 		getButtonOfLocation(computerMove).setEnabled(false);
+		isGameOver();
+	}
+	
+	/*this method does the GUI part of checking if the game is over*/
+	private void isGameOver(){
 		if(game.isGameOver() == -1){
 			JOptionPane.showMessageDialog(null, "It's a tie!");
 			numberOfTies++;

@@ -41,6 +41,7 @@ public class Game {
 			return -1;
 		}
 		if(isThereAWinner()){
+			System.out.println(isThereAWinner());
 			return 1;
 		}
 		return 0;
@@ -64,14 +65,16 @@ public class Game {
 		for(int i=0; i<board.length;i++){ 
 			if(board[i][0]==board[i][1]
 			&& board[i][1]==board[i][2]
-			&& board[i][2]==board[i][3]){
+			&& board[i][2]==board[i][3]
+			&& board[i][0]!=' '){
 				//checks for columns
 				winner = board[i][0];
 			return true;
 			}
 			if(board[0][i]==board[1][i]
 			&& board[1][i]==board[2][i]
-			&& board[3][i]==board[3][i]){
+			&& board[2][i]==board[3][i]
+			&& board[0][i]!=' '){
 				//check for rows
 				winner = board[0][i];
 				return true;
@@ -79,13 +82,15 @@ public class Game {
 		}
 		if(board[0][0]==board[1][1]
 		&& board[1][1]==board[2][2]
-		&& board[2][2]==board[3][3]){
+		&& board[2][2]==board[3][3]
+		&& board[0][0]!=' '){
 			winner = board[0][0];
 			return true;
 		}
 		if(board[0][3]==board[1][2]
 		&& board[1][2]==board[2][1]
-		&& board[2][1]==board[3][0]){
+		&& board[2][1]==board[3][0]
+		&& board[0][3]!=' '){
 			winner = board[0][3];
 			return true;
 		}
