@@ -1,12 +1,13 @@
 
 import java.util.*;
 public class Game {
-	private static  char [][] board = new char[4][4];
+	public static  char [][] board = new char[4][4];
 	private static int row;
 	private static int col;
 	private static Scanner scan = new Scanner(System.in);
 	private static char turn = 'X';
 	private static AI ai;
+	private int turnsCounter = 0;
 	
 	public Game(){
 		for(int i = 0; i<board.length;i++){
@@ -28,7 +29,20 @@ public class Game {
 			break;
 			}
 		}
+		turnsCounter++;
 		return new Location(x,y);
+	}
+	public int isGameOver(){
+		if(turnsCounter == 8){
+			return -1;
+		}
+		return 0;
+	}
+	
+	public void resetBoard(){
+		char[][] clearBoard = new char[4][4];
+		setBoard(clearBoard);
+		turnsCounter = 0;
 	}
 	public boolean cellIsEmpty(int x, int y){
 		if(board[x][y]=='x'||board[x][y]=='o'){
