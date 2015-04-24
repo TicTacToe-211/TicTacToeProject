@@ -2,24 +2,27 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
-public class XOButton extends JButton implements ActionListener {
+public class XOButton extends JButton {
 	private Location location;
 	ImageIcon x;
 	ImageIcon o;
 	char value;
 	
-	public Location getLocation(){
+	public Location getButtonLocation(){
 		return location;
+	}
+	public XOButton(){
+		
 	}
 	public XOButton(int x, int y){
 		this.location = new Location(x,y);
 		this.x = new ImageIcon(getClass().getResource("X.png"));
 		this.o = new ImageIcon(getClass().getResource("o.png"));
-		addActionListener(this);
 	}
 	
-@Override
-	public void actionPerformed(ActionEvent e){
+
+	public void setValue(char value){
+		this.value=value;
 		switch(value){
 		case 'x': 
 			setIcon(x);
@@ -34,8 +37,5 @@ public class XOButton extends JButton implements ActionListener {
 			 this.setEnabled(true);
 			 break;
 		}
-	}
-	public void setValue(char value){
-		this.value=value;
 	}
 }

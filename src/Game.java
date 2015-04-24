@@ -15,14 +15,27 @@ public class Game {
 			}
 		}
 	}
-	public void play(int x,int y){
+	public Location play(Location location){
+		int x = location.getX();
+		int y = location.getY();
 		board[x][y]='x';
-		do{
+		while(true){
 			Random random = new Random();
 			 x = random.nextInt(4);
 			y = random.nextInt(4);
+			if(cellIsEmpty(x,y)){
 			board[x][y]='o';
-		} while(board[x][y] == ' ');
+			break;
+			}
+		}
+		return new Location(x,y);
+	}
+	public boolean cellIsEmpty(int x, int y){
+		if(board[x][y]=='x'||board[x][y]=='o'){
+			return false;
+		}
+		else
+		return true;
 	}
 	public static char[][] getBoard() {
 		return board;
