@@ -37,14 +37,14 @@ public class Game {
 	 * returns 0 when the game is not over yet.
 	 */
 	public int isGameOver(){
-		if(turnsCounter == 8){
-			return -1;
-		}
 		if(isThereAWinner()){
 			System.out.println(isThereAWinner());
 			return 1;
 		}
-		return 0;
+		else if(turnsCounter == 8){
+			return -1;
+		}
+		else return 0;
 	}
 	
 	/*resets the game board, emptying all cells*/
