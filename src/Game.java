@@ -38,25 +38,23 @@ public class Game {
 			System.out.print("Column: ");
 			col = scan.nextInt() - 1;
 			turn = 'X';
-			if(isFree(row,col)){
-				board[row][col] = 'X';
-			}
-			else
-			{
+			while(!(isFree(row,col))){
 				System.err.println("Cell taken");
 				System.out.print("Row: ");
 				row = scan.nextInt() - 1;
+				
 				System.out.print("Column: ");
 				col = scan.nextInt() - 1;
-			    board[row][col] = 'X';
+				turn = 'X';
 			}
+			board[row][col] = 'X';
 			if(gameOver()==0){
 				playing = false;
 				printBoard();
 				System.out.println("Game Over, player "+ "X"+ " wins!");
 				System.exit(0);
 			}
-			AI.firstMove();
+			AI.move();
 			printBoard();
 			turn = 'O';
 			
