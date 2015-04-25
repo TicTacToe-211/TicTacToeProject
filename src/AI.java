@@ -33,7 +33,8 @@ public class AI {
 			}
 		}
 	}
-	public static boolean block(){
+	//turned method into private because it's not accessed by other classes
+	private static boolean block(){
 		//first row
 		if(Game.board[0][0] == 'O'||Game.board[0][1] == 'O'||Game.board[0][2] == 'O' || Game.board[0][3] == 'O'){
 			return false;
