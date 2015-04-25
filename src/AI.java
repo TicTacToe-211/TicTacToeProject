@@ -3,6 +3,7 @@ public class AI {
 
 	public static void move(){
 		if(block()){
+			return;
 		}
 	else{
 		if(Game.board[0][0] == '_'){
