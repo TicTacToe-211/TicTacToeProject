@@ -115,7 +115,7 @@ public class Game {
 	}
 
 	
-	
+	/*
 	public static void main(String[] args){
 		
 		for(int r = 0;r<4; r++){
@@ -184,7 +184,7 @@ public class Game {
 	    	System.out.println();
 		}
 	}
-	
+	/*
 	public static int gameOver(){
 
 		if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[2][0] == board[3][0]&& board[0][0]=='X'){
@@ -257,7 +257,7 @@ public class Game {
 			 return -1;
 		return 1;
 	}
-	
+	*/
 	public static boolean isFree(int r, int c){
 		if(board[r][c] == '_')
 			return true;
