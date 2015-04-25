@@ -340,8 +340,6 @@ public class AI {
 		
 		return false;
  }
-	/*public static boolean canWin(){
-		
-	}*/
+
 }
 
