@@ -2,26 +2,31 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
-public class XOButton extends JButton {
+public class XOButton extends JButton 
+{
 	private Location location;
 	ImageIcon x;
 	ImageIcon o;
 	char value;
 	
-	public Location getButtonLocation(){
+	public Location getButtonLocation()
+	{
 		return location;
 	}
-	public XOButton(){
+	public XOButton()
+	{
 		
 	}
-	public XOButton(int x, int y){
+	public XOButton(int x, int y)
+	{
 		this.location = new Location(x,y);
 		this.x = new ImageIcon(getClass().getResource("x.png"));
 		this.o = new ImageIcon(getClass().getResource("O.png"));
 	}
 	
 
-	public void setValue(char value){
+	public void setValue(char value)
+	{
 		this.value=value;
 		switch(value){
 		case 'x': 

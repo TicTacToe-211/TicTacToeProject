@@ -11,8 +11,8 @@ import java.util.*;
 import javax.swing.JLabel;
 
 
-public class GameInterface {
-
+public class GameInterface 
+{
 	private JFrame GameFrame;
 	private Game game;
 	private Location computerMove;
@@ -24,7 +24,6 @@ public class GameInterface {
 	private JLabel lblNumberOfWins;
 	private JLabel lblNumberOfLosses;
 	private JLabel lblNumberOfTies;
-
 	/**
 	 * Launch the application.
 	 */
@@ -34,10 +33,12 @@ public class GameInterface {
 		{
 			public void run() 
 			{
-				try {
+				try 
+				{
 					GameInterface window = new GameInterface();
 					window.GameFrame.setVisible(true);
-				} catch (Exception e) {
+				} catch (Exception e) 
+				{
 					e.printStackTrace();
 				}
 			}
