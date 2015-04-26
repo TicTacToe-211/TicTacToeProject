@@ -1,5 +1,6 @@
 
 public class AI {
+	//Add a board and create set method to set this board to Game board
 
 	public static void move(){
 		if(block()){
