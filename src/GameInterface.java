@@ -28,9 +28,12 @@ public class GameInterface {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
+	public static void main(String[] args) 
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
+			public void run() 
+			{
 				try {
 					GameInterface window = new GameInterface();
 					window.GameFrame.setVisible(true);
@@ -41,9 +44,12 @@ public class GameInterface {
 		});
 	}
 	
-	private XOButton getButtonOfLocation(Location location){
-		for(XOButton button : buttonsList){
-			if(button.getButtonLocation().compareTo(location)==0){
+	private XOButton getButtonOfLocation(Location location)
+	{
+		for(XOButton button : buttonsList)
+		{
+			if(button.getButtonLocation().compareTo(location)==0)
+			{
 				return button;
 			}
 		}
@@ -53,12 +59,14 @@ public class GameInterface {
 	/**
 	 * Create the application.
 	 */
-	public GameInterface() {
+	public GameInterface()
+	{
 		initialize();
 	}
 	
 	/* this method should be called when a key is pressed; to avoid redundency*/
-	private void XOButtonPressed(XOButton button){
+	private void XOButtonPressed(XOButton button)
+	{
 		computerMove =	game.play(button.getButtonLocation());
 		button.setValue('x');
 
@@ -69,18 +77,23 @@ public class GameInterface {
 	}
 	
 	/*this method does the GUI part of checking if the game is over*/
-	private void isGameOver(){
-		if(game.isGameOver() == -1){
+	private void isGameOver()
+	{
+		if(game.isGameOver() == -1)
+		{
 			JOptionPane.showMessageDialog(null, "It's a tie!");
 			numberOfTies++;
 			resetGame();
 		}
-		if(game.isGameOver() == 1){
-			if(game.getWinner()=='x'){
+		if(game.isGameOver() == 1)
+		{
+			if(game.getWinner()=='x')
+			{
 				numberOfWins++;
 				JOptionPane.showMessageDialog(null, "You won!");
 			}
-			else if(game.getWinner()=='o'){
+			else if(game.getWinner()=='o')
+			{
 				numberOfLosses++;
 				JOptionPane.showMessageDialog(null, "You Lost :(");
 			}
@@ -89,9 +102,11 @@ public class GameInterface {
 	}
 	
 	/* this method resets the game, it is only called once game.isGameOver() returns a value other than 0*/
-	private void resetGame(){
+	private void resetGame()
+	{
 		game.resetBoard();
-		for(XOButton button: buttonsList){
+		for(XOButton button: buttonsList)
+		{
 			button.setValue(' ');
 			button.setEnabled(true);
 		}
@@ -103,7 +118,8 @@ public class GameInterface {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	public void initialize() {
+	public void initialize()
+	{
 		GameFrame = new JFrame();
 		GameFrame.setTitle("Tic Tac Toe");
 		GameFrame.setResizable(false);
@@ -114,8 +130,10 @@ public class GameInterface {
 		
 		XOButton button00 = new XOButton(0,0);
 		buttonsList.add(button00);
-		button00.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button00.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 			XOButtonPressed(button00);
 			}
 		});
@@ -124,8 +142,10 @@ public class GameInterface {
 		
 		XOButton button01 = new XOButton(0,1);
 		buttonsList.add(button01);
-		button01.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button01.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button01);
 			}
 		});
@@ -135,8 +155,10 @@ public class GameInterface {
 		
 		XOButton button02 = new XOButton(0,2);
 		buttonsList.add(button02);
-		button02.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button02.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button02);
 			}
 		});
@@ -145,8 +167,10 @@ public class GameInterface {
 		
 		XOButton button03 = new XOButton(0,3);
 		buttonsList.add(button03);
-		button03.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button03.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button03);
 			}
 		});
@@ -155,8 +179,10 @@ public class GameInterface {
 		
 		XOButton button10 = new XOButton(1,0);
 		buttonsList.add(button10);
-		button10.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button10.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button10);
 			}
 		});
@@ -165,8 +191,10 @@ public class GameInterface {
 		
 		XOButton button11 = new XOButton(1,1);
 		buttonsList.add(button11);
-		button11.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button11.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button11);
 			}
 		});
@@ -175,8 +203,10 @@ public class GameInterface {
 		
 		XOButton button12 = new XOButton(1,2);
 		buttonsList.add(button12);
-		button12.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button12.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button12);
 			}
 		});
@@ -185,8 +215,10 @@ public class GameInterface {
 		
 		XOButton button13 = new XOButton(1,3);
 		buttonsList.add(button13);
-		button13.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button13.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button13);
 			}
 		});
@@ -195,8 +227,10 @@ public class GameInterface {
 		
 		XOButton button20 = new XOButton(2,0);
 		buttonsList.add(button20);
-		button20.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button20.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button20);
 			}
 		});
@@ -205,8 +239,10 @@ public class GameInterface {
 		
 		XOButton button21 = new XOButton(2,1);
 		buttonsList.add(button21);
-		button21.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button21.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button21);
 			}
 		});
@@ -215,8 +251,10 @@ public class GameInterface {
 		
 		XOButton button22 = new XOButton(2,2);
 		buttonsList.add(button22);
-		button22.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button22.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button22);
 			}
 		});
@@ -225,8 +263,10 @@ public class GameInterface {
 		
 		XOButton button23 = new XOButton(2,3);
 		buttonsList.add(button23);
-		button23.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button23.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button23);
 			}
 		});
@@ -235,8 +275,10 @@ public class GameInterface {
 		
 		XOButton button30 = new XOButton(3,0);
 		buttonsList.add(button30);
-		button30.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button30.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button30);
 			}
 		});
@@ -245,8 +287,10 @@ public class GameInterface {
 		
 		XOButton button31 = new XOButton(3,1);
 		buttonsList.add(button31);
-		button31.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button31.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 				XOButtonPressed(button31);
 			}
 		});
@@ -255,8 +299,10 @@ public class GameInterface {
 		
 		XOButton button32 = new XOButton(3,2);
 		buttonsList.add(button32);
-		button32.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button32.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent arg0) 
+			{
 				XOButtonPressed(button32);
 			}
 		});
@@ -265,8 +311,10 @@ public class GameInterface {
 		
 		XOButton button33 = new XOButton(3,3);
 		buttonsList.add(button33);
-		button33.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		button33.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0) 
+			{
 				XOButtonPressed(button33);
 			}
 		});
@@ -274,8 +322,10 @@ public class GameInterface {
 		GameFrame.getContentPane().add(button33);
 		
 		JButton btnExit = new JButton("EXIT");
-		btnExit.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		btnExit.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e)
+			{
 				System.exit(0);
 			}
 		});
