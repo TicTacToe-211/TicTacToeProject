@@ -24,7 +24,7 @@ public class Game
 			Random random = new Random();
 			 col = random.nextInt(4);
 			 row = random.nextInt(4);
-			if(cellIsEmpty(col,row))
+			if(isFree(col,row))
 			{
 			board[col][row]='o';
 			break;
@@ -111,7 +111,7 @@ public class Game
 	}
 	
 	/* checks the cell at the given points, returns true if empty */
-	public boolean cellIsEmpty(int x, int y)
+	public boolean isFree(int x, int y)
 	{
 		if(board[x][y]=='x'||board[x][y]=='o')
 		{
@@ -130,8 +130,7 @@ public class Game
 	{
 		board = b;
 	}
-
-	public  void main(String[] args)
+	public  static void main(String[] args)
 	{	
 		for(int r = 0;r<4; r++)
 		{

@@ -1,341 +1,344 @@
 
 public class AI {
+	private Game game;
 	//Add a board and create set method to set this board to Game board
-
-	public static void move(){
+	private char [][] board;
+	public void move(){
+		board = game.getBoard();
 		if(block()){
 			
 		}
 	else{
-		if(Game.board[0][0] == '_'){
-			Game.board[0][0] = 'O';
+		if(game.isFree(0,0)){
+			board[0][0] = 'o';
 		}
-		else if(Game.board[0][3] == '_'){
-			Game.board[0][3] = 'O';
+		else if(game.isFree(0, 3)){
+			board[0][3] = 'o';
 		}
-		else if(Game.board[3][3] == '_')
-			Game.board[3][3] = 'O';
-		else if(Game.board[3][0] == '_')
-			Game.board[3][0] = 'O';
-		else if(Game.isFree(1,1)){
-				Game.board[1][1] = 'O';
+		else if(game.isFree(3, 3))
+			board[3][3] = 'o';
+		else if(game.isFree(3, 0))
+			board[3][0] = 'o';
+		else if(game.isFree(1,1)){
+				board[1][1] = 'o';
 			}
 			else{
-				if(Game.isFree(1, 0))
-					Game.board[1][0] = 'O';
-				else if(Game.isFree(1, 3)){
-					Game.board[1][3] = 'O';
+				if(game.isFree(1, 0))
+					board[1][0] = 'o';
+				else if(game.isFree(1, 3)){
+					board[1][3] = 'o';
 				}
-				else if(Game.isFree(0, 1))
-					Game.board[0][1] = 'O';
-				else if (Game.isFree(3,1)){
-					Game.board[3][1] = 'O';
+				else if(game.isFree(0, 1))
+					board[0][1] = 'o';
+				else if (game.isFree(3,1)){
+					board[3][1] = 'o';
 				}
 			}
 		}
+		game.setBoard(board);
 	}
 	//turned method into private because it's not accessed by other classes
-	private static boolean block(){
+	private boolean block(){
 		//first row
-		if(Game.board[0][0] == 'O'||Game.board[0][1] == 'O'||Game.board[0][2] == 'O' || Game.board[0][3] == 'O'){
+		if(board[0][0] == 'o'||board[0][1] == 'o'||board[0][2] == 'o' || board[0][3] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][0] == Game.board[0][1] && Game.board[0][1]== Game.board[0][2] && Game.board[0][2] == 'X'){
-				if(Game.isFree(0, 3)){
-				Game.board[0][3] = 'O';
+			if(board[0][0] == board[0][1] && board[0][1]== board[0][2] && board[0][2] == 'x'){
+				if(game.isFree(0, 3)){
+				board[0][3] = 'o';
 				return true;
 				}
 			}
-			if(Game.board[0][0] == Game.board[0][2] && Game.board[0][0]==Game.board[0][3] && Game.board[0][0] =='X'){
-				if(Game.isFree(0 ,1)){
-					Game.board[0][1] = 'O';
+			if(board[0][0] == board[0][2] && board[0][0]==board[0][3] && board[0][0] =='x'){
+				if(game.isFree(0 ,1)){
+					board[0][1] = 'o';
 					return true;
 					}
 			}
-			if(Game.board[0][2] == Game.board[0][1] && Game.board[0][2] == Game.board[0][3] && Game.board[0][2]=='X'){
-				if(Game.isFree(0, 0)){
-					Game.board[0][0] = 'O';
+			if(board[0][2] == board[0][1] && board[0][2] == board[0][3] && board[0][2]=='x'){
+				if(game.isFree(0, 0)){
+					board[0][0] = 'o';
 					return true;
 					}
 			}
-			if(Game.board[0][0]==Game.board[0][1] && Game.board[0][1] == Game.board[0][3] && Game.board[0][0] == 'X'){
-				if(Game.isFree(0, 2)){
-					Game.board[0][2] = 'O';
+			if(board[0][0]==board[0][1] && board[0][1] == board[0][3] && board[0][0] == 'x'){
+				if(game.isFree(0, 2)){
+					board[0][2] = 'o';
 					return true;
 				}
 			}
 		}
 		
 		//Second row	
-		if(Game.board[1][0] == 'O' ||Game.board[1][1] == 'O'||Game.board[1][2] == 'O' || Game.board[1][3] == 'O'){
+		if(board[1][0] == 'o' ||board[1][1] == 'o'||board[1][2] == 'o' || board[1][3] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[1][0] == Game.board[1][1] && Game.board[1][1]==Game.board[1][3] && Game.board[1][0] == 'X'){
-				if(Game.isFree(1,2)){
-					Game.board[1][2] = 'O';
+			if(board[1][0] == board[1][1] && board[1][1]==board[1][3] && board[1][0] == 'x'){
+				if(game.isFree(1,2)){
+					board[1][2] = 'o';
 					return true;
 					}
 			}
-			if(Game.board[1][0] == Game.board[1][2] && Game.board[1][0]==Game.board[1][3] && Game.board[1][0] == 'X'){
-				if(Game.isFree(1, 1)){
-					Game.board[1][1] = 'O';
+			if(board[1][0] == board[1][2] && board[1][0]==board[1][3] && board[1][0] == 'x'){
+				if(game.isFree(1, 1)){
+					board[1][1] = 'o';
 					return true;
 					}
 			}
-			if(Game.board[1][2] == Game.board[1][1] && Game.board[1][2] == Game.board[1][3] && Game.board[1][2] == 'X'){
-				if(Game.isFree(1,0)){
-					Game.board[1][0] = 'O';
+			if(board[1][2] == board[1][1] && board[1][2] == board[1][3] && board[1][2] == 'x'){
+				if(game.isFree(1,0)){
+					board[1][0] = 'o';
 					return true;
 					}
 			}
-			if(Game.board[1][0] == Game.board[1][1] && Game.board[1][1] == Game.board[1][2] && Game.board[1][2] == 'X'){
-				if(Game.isFree(1,3)){
-					Game.board[1][3] = 'O';
+			if(board[1][0] == board[1][1] && board[1][1] == board[1][2] && board[1][2] == 'x'){
+				if(game.isFree(1,3)){
+					board[1][3] = 'o';
 					return true;
 					}
 			}
 		}
 		
 		//third row
-		if(Game.board[2][0] == 'O' ||Game.board[2][1] == 'O'||Game.board[2][2] == 'O'||Game.board[2][3] == 'O'){
+		if(board[2][0] == 'o' ||board[2][1] == 'o'||board[2][2] == 'o'||board[2][3] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[2][0] == Game.board[2][1] && Game.board[2][1]==Game.board[2][3] && Game.board[2][0] == 'X') {
-				if(Game.isFree(2,2)){
-					Game.board[2][2] = 'O';
+			if(board[2][0] == board[2][1] && board[2][1]==board[2][3] && board[2][0] == 'x') {
+				if(game.isFree(2,2)){
+					board[2][2] = 'o';
 					return true;
 					}
 			}
-			if(Game.board[2][0] == Game.board[2][2] && Game.board[2][0]==Game.board[2][3] && Game.board[2][3] == 'X'){
-				if(Game.isFree(2, 1)){
-					Game.board[2][1] = 'O';
+			if(board[2][0] == board[2][2] && board[2][0]==board[2][3] && board[2][3] == 'x'){
+				if(game.isFree(2, 1)){
+					board[2][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[2][2] == Game.board[2][1] && Game.board[2][2] == Game.board[2][3] && Game.board[2][3] == 'X'){
-				if(Game.isFree(2, 0)){
-					Game.board[2][0] = 'O';
+			if(board[2][2] == board[2][1] && board[2][2] == board[2][3] && board[2][3] == 'x'){
+				if(game.isFree(2, 0)){
+					board[2][0] = 'o';
 				return true;
 				}
 			}
-			if(Game.board[2][0] == Game.board[2][1] && Game.board[2][1] == Game.board[2][2] && Game.board[2][0] == 'X'){
-				if(Game.isFree(2, 3)){
-					Game.board[2][3] = 'O';
+			if(board[2][0] == board[2][1] && board[2][1] == board[2][2] && board[2][0] == 'x'){
+				if(game.isFree(2, 3)){
+					board[2][3] = 'o';
 				return true;
 				}
 			}
 		}
 		
 		//fourth row 
-		if(Game.board[3][0] == 'O'||Game.board[3][1] == 'O'||Game.board[3][2] == 'O'||Game.board[3][3] == 'O'){
+		if(board[3][0] == 'o'||board[3][1] == 'o'||board[3][2] == 'o'||board[3][3] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[3][0] == Game.board[3][1] && Game.board[3][1]==Game.board[3][2] &&Game.board[3][2]=='X' ){
-				if(Game.isFree(3 ,3 )){
-					Game.board[3][3] = 'O';
+			if(board[3][0] == board[3][1] && board[3][1]==board[3][2] &&board[3][2]=='x' ){
+				if(game.isFree(3 ,3 )){
+					board[3][3] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[3][0] == Game.board[3][2] && Game.board[3][2]==Game.board[3][3] &&Game.board[3][0]=='X'){
-				if(Game.isFree(3,1)){
-					Game.board[3][1] = 'O';
+			if(board[3][0] == board[3][2] && board[3][2]==board[3][3] &&board[3][0]=='x'){
+				if(game.isFree(3,1)){
+					board[3][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[3][1] == Game.board[3][2] && Game.board[3][1] == Game.board[3][3] &&Game.board[3][3]=='X'){
-				if(Game.isFree(3, 0)){
-					Game.board[3][0] = 'O';
+			if(board[3][1] == board[3][2] && board[3][1] == board[3][3] &&board[3][3]=='x'){
+				if(game.isFree(3, 0)){
+					board[3][0] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[3][1] == Game.board[3][0] && Game.board[3][1] == Game.board[3][3] &&Game.board[3][3]=='X'){
-				if(Game.isFree(3, 2)){
-					Game.board[3][2] = 'O';
+			if(board[3][1] == board[3][0] && board[3][1] == board[3][3] &&board[3][3]=='x'){
+				if(game.isFree(3, 2)){
+					board[3][2] = 'o';
 					return true;
 				}
 		  }
 	}
 		
 		//second diagonal
-		if(Game.board[0][3] == 'O'||Game.board[1][2] == 'O'||Game.board[2][1] == 'O'||Game.board[3][0] == 'O'){
+		if(board[0][3] == 'o'||board[1][2] == 'o'||board[2][1] == 'o'||board[3][0] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][3] == Game.board[1][2] && Game.board[1][2]==Game.board[2][1] &&Game.board[0][3]=='X' ){
-				if(Game.isFree(3,0)){
-					Game.board[3][0] = 'O';
+			if(board[0][3] == board[1][2] && board[1][2]==board[2][1] &&board[0][3]=='x' ){
+				if(game.isFree(3,0)){
+					board[3][0] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][3] == Game.board[1][2] && Game.board[1][2]==Game.board[3][0] &&Game.board[0][3]=='X'){
-				if(Game.isFree(2,1)){
-					Game.board[2][1] = 'O';
+			if(board[0][3] == board[1][2] && board[1][2]==board[3][0] &&board[0][3]=='x'){
+				if(game.isFree(2,1)){
+					board[2][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][3] == Game.board[2][1] && Game.board[2][1] == Game.board[3][0] &&Game.board[0][3]=='X'){
-				if(Game.isFree(1,2)){
-					Game.board[1][2] = 'O';
+			if(board[0][3] == board[2][1] && board[2][1] == board[3][0] &&board[0][3]=='x'){
+				if(game.isFree(1,2)){
+					board[1][2] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[1][2] == Game.board[2][1] && Game.board[1][2] == Game.board[3][0] &&Game.board[1][2]=='X'){
-				if(Game.isFree(0, 3)){
-					Game.board[0][3] = 'O';
+			if(board[1][2] == board[2][1] && board[1][2] == board[3][0] &&board[1][2]=='x'){
+				if(game.isFree(0, 3)){
+					board[0][3] = 'o';
 					return true;
 				}
 		  }
 	}
 		//first diagonal
-		if(Game.board[0][0] == 'O'||Game.board[1][1] == 'O'||Game.board[2][2] == 'O'||Game.board[3][3] == 'O'){
+		if(board[0][0] == 'o'||board[1][1] == 'o'||board[2][2] == 'o'||board[3][3] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][0] == Game.board[1][1] && Game.board[1][1]==Game.board[3][3] &&Game.board[3][3]=='X' ){
-				if(Game.isFree(2, 2)){
-					Game.board[2][2] = 'O';
+			if(board[0][0] == board[1][1] && board[1][1]==board[3][3] &&board[3][3]=='x' ){
+				if(game.isFree(2, 2)){
+					board[2][2] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][0] == Game.board[2][2] && Game.board[2][2]==Game.board[3][3] &&Game.board[3][3]=='X'){
-				if(Game.isFree(1, 1)){
-					Game.board[1][1] = 'O';
+			if(board[0][0] == board[2][2] && board[2][2]==board[3][3] &&board[3][3]=='x'){
+				if(game.isFree(1, 1)){
+					board[1][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[1][1] == Game.board[2][2] && Game.board[1][1] == Game.board[3][3] &&Game.board[3][3]=='X'){
-				if(Game.isFree(0, 0)){
-					Game.board[0][0] = 'O';
+			if(board[1][1] == board[2][2] && board[1][1] == board[3][3] &&board[3][3]=='x'){
+				if(game.isFree(0, 0)){
+					board[0][0] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[0][0] == Game.board[1][1] && Game.board[1][1] == Game.board[2][2] &&Game.board[2][2]=='X'){
-				if(Game.isFree(3, 3)){
-					Game.board[3][3] = 'O';
+			if(board[0][0] == board[1][1] && board[1][1] == board[2][2] &&board[2][2]=='x'){
+				if(game.isFree(3, 3)){
+					board[3][3] = 'o';
 					return true;
 				}
 		  }
 	}
 		//first column
-		if(Game.board[0][0] == 'O'||Game.board[1][0] == 'O'||Game.board[2][0] == 'O'||Game.board[3][0] == 'O'){
+		if(board[0][0] == 'o'||board[1][0] == 'o'||board[2][0] == 'o'||board[3][0] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][0] == Game.board[1][0] && Game.board[1][0]==Game.board[2][0] &&Game.board[0][0]=='X' ){
-				if(Game.isFree(3, 0)){
-					Game.board[3][0] = 'O';
+			if(board[0][0] == board[1][0] && board[1][0]==board[2][0] &&board[0][0]=='x' ){
+				if(game.isFree(3, 0)){
+					board[3][0] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][0] == Game.board[1][0] && Game.board[1][0]==Game.board[3][0] &&Game.board[0][0]=='X'){
-				if(Game.isFree(2, 0)){
-					Game.board[2][0] = 'O';
+			if(board[0][0] == board[1][0] && board[1][0]==board[3][0] &&board[0][0]=='x'){
+				if(game.isFree(2, 0)){
+					board[2][0] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][0] == Game.board[2][0] && Game.board[2][0] == Game.board[3][0] &&Game.board[0][0]=='X'){
-				if(Game.isFree(1, 0)){
-					Game.board[1][0] = 'O';
+			if(board[0][0] == board[2][0] && board[2][0] == board[3][0] &&board[0][0]=='x'){
+				if(game.isFree(1, 0)){
+					board[1][0] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[1][0] == Game.board[2][0] && Game.board[2][0] == Game.board[3][0] &&Game.board[1][0]=='X'){
-				if(Game.isFree(0, 0)){
-					Game.board[0][0] = 'O';
+			if(board[1][0] == board[2][0] && board[2][0] == board[3][0] &&board[1][0]=='x'){
+				if(game.isFree(0, 0)){
+					board[0][0] = 'o';
 					return true;
 				}
 		  }
 	}
 		//Second column
-		if(Game.board[0][1] == 'O'||Game.board[1][1] == 'O'||Game.board[2][1] == 'O'||Game.board[3][1] == 'O'){
+		if(board[0][1] == 'o'||board[1][1] == 'o'||board[2][1] == 'o'||board[3][1] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][1] == Game.board[1][1] && Game.board[1][1]==Game.board[2][1] &&Game.board[0][1]=='X' ){
-				if(Game.isFree(3,1)){
-					Game.board[3][1] = 'O';
+			if(board[0][1] == board[1][1] && board[1][1]==board[2][1] &&board[0][1]=='x' ){
+				if(game.isFree(3,1)){
+					board[3][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][1] == Game.board[1][1] && Game.board[1][1]==Game.board[3][1] &&Game.board[0][1]=='X'){
-				if(Game.isFree(2, 1)){
-					Game.board[2][1] = 'O';
+			if(board[0][1] == board[1][1] && board[1][1]==board[3][1] &&board[0][1]=='x'){
+				if(game.isFree(2, 1)){
+					board[2][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][1] == Game.board[2][1] && Game.board[2][1] == Game.board[3][1] &&Game.board[0][1]=='X'){
-				if(Game.isFree(1,1)){
-					Game.board[1][1] = 'O';
+			if(board[0][1] == board[2][1] && board[2][1] == board[3][1] &&board[0][1]=='x'){
+				if(game.isFree(1,1)){
+					board[1][1] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[1][1] == Game.board[2][1] && Game.board[2][1] == Game.board[3][1] &&Game.board[1][1]=='X'){
-				if(Game.isFree(0,1)){
-					Game.board[0][1] = 'O';
+			if(board[1][1] == board[2][1] && board[2][1] == board[3][1] &&board[1][1]=='x'){
+				if(game.isFree(0,1)){
+					board[0][1] = 'o';
 					return true;
 				}
 		  }
 	}
 		//third column
-		if(Game.board[0][1] == 'O'||Game.board[1][1] == 'O'||Game.board[2][1] == 'O'||Game.board[3][1] == 'O'){
+		if(board[0][1] == 'o'||board[1][1] == 'o'||board[2][1] == 'o'||board[3][1] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][1] == Game.board[1][1] && Game.board[1][1]==Game.board[2][1] &&Game.board[0][1]=='X' ){
-				if(Game.isFree(3,1)){
-					Game.board[3][1] = 'O';
+			if(board[0][1] == board[1][1] && board[1][1]==board[2][1] &&board[0][1]=='x' ){
+				if(game.isFree(3,1)){
+					board[3][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][1] == Game.board[1][1] && Game.board[1][1]==Game.board[3][1] &&Game.board[0][1]=='X'){
-				if(Game.isFree(2, 1)){
-					Game.board[2][1] = 'O';
+			if(board[0][1] == board[1][1] && board[1][1]==board[3][1] &&board[0][1]=='x'){
+				if(game.isFree(2, 1)){
+					board[2][1] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][1] == Game.board[2][1] && Game.board[2][1] == Game.board[3][1] &&Game.board[0][1]=='X'){
-				if(Game.isFree(1,1)){
-					Game.board[1][1] = 'O';
+			if(board[0][1] == board[2][1] && board[2][1] == board[3][1] &&board[0][1]=='x'){
+				if(game.isFree(1,1)){
+					board[1][1] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[1][1] == Game.board[2][1] && Game.board[2][1] == Game.board[3][1] &&Game.board[1][1]=='X'){
-				if(Game.isFree(0,1)){
-					Game.board[0][1] = 'O';
+			if(board[1][1] == board[2][1] && board[2][1] == board[3][1] &&board[1][1]=='x'){
+				if(game.isFree(0,1)){
+					board[0][1] = 'o';
 					return true;
 				}
 		  }
 	}
 		//fourth column
-		if(Game.board[0][3] == 'O'||Game.board[1][3] == 'O'||Game.board[2][3] == 'O'||Game.board[3][3] == 'O'){
+		if(board[0][3] == 'o'||board[1][3] == 'o'||board[2][3] == 'o'||board[3][3] == 'o'){
 			return false;
 		}
 		else{
-			if(Game.board[0][3] == Game.board[1][3] && Game.board[1][3]==Game.board[2][3] &&Game.board[0][3]=='X' ){
-				if(Game.isFree(3,3)){
-					Game.board[3][3] = 'O';
+			if(board[0][3] == board[1][3] && board[1][3]==board[2][3] &&board[0][3]=='x' ){
+				if(game.isFree(3,3)){
+					board[3][3] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][3] == Game.board[1][3] && Game.board[1][3]==Game.board[3][3] &&Game.board[0][3]=='X'){
-				if(Game.isFree(2, 3)){
-					Game.board[2][3] = 'O';
+			if(board[0][3] == board[1][3] && board[1][3]==board[3][3] &&board[0][3]=='x'){
+				if(game.isFree(2, 3)){
+					board[2][3] = 'o';
 					return true;
 				}
 			}
-			if(Game.board[0][3] == Game.board[2][3] && Game.board[2][3] == Game.board[3][3] &&Game.board[0][3]=='X'){
-				if(Game.isFree(1,3)){
-					Game.board[1][3] = 'O';
+			if(board[0][3] == board[2][3] && board[2][3] == board[3][3] &&board[0][3]=='x'){
+				if(game.isFree(1,3)){
+					board[1][3] = 'o';
 					return true;
 				}
 		  }
-			if(Game.board[1][3] == Game.board[2][3] && Game.board[2][3] == Game.board[3][3] &&Game.board[1][3]=='X'){
-				if(Game.isFree(0,3)){
-					Game.board[0][3] = 'O';
+			if(board[1][3] == board[2][3] && board[2][3] == board[3][3] &&board[1][3]=='x'){
+				if(game.isFree(0,3)){
+					board[0][3] = 'o';
 					return true;
 				}
 		  }
