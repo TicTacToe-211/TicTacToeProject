@@ -6,8 +6,9 @@ public class AI
 	private char [][] board;
 	public Location move()
 	{
+		return new Location(0,0);
 		board = game.getBoard();
-		if(block() != null)
+		if(false)
 		{
 			return block();
 		}
@@ -86,7 +87,7 @@ public class AI
 			return new Location(2,3);
 			 
 		}
-		return null;
+		return new Location(0,0);
 	}
 	private Location block()
 	{

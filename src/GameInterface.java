@@ -24,6 +24,8 @@ public class GameInterface
 	private JLabel lblNumberOfWins;
 	private JLabel lblNumberOfLosses;
 	private JLabel lblNumberOfTies;
+	private char player; 
+	private char computer;
 	/**
 	 * Launch the application.
 	 */
@@ -63,17 +65,21 @@ public class GameInterface
 	public GameInterface()
 	{
 		initialize();
+		
 	}
 	
+	private void computerPlay(Location computerMove){
+		getButtonOfLocation(computerMove).setValue(computer);
+	}
 	/* this method should be called when a key is pressed; to avoid redundency*/
 	private void XOButtonPressed(XOButton button)
 	{
 		computerMove =	game.play(button.getButtonLocation());
-		button.setValue('x');
+		button.setValue(player);
 
 		System.out.println(computerMove);
-		getButtonOfLocation(computerMove).setValue('o');
-		getButtonOfLocation(computerMove).setEnabled(false);
+		computerPlay(computerMove);
+		//getButtonOfLocation(computerMove).setEnabled(false);
 		isGameOver();
 	}
 	
@@ -88,12 +94,12 @@ public class GameInterface
 		}
 		if(game.isGameOver() == 1)
 		{
-			if(game.getWinner()=='x')
+			if(game.getWinner()==this.player)
 			{
 				numberOfWins++;
 				JOptionPane.showMessageDialog(null, "You won!");
 			}
-			else if(game.getWinner()=='o')
+			else if(game.getWinner()==this.computer)
 			{
 				numberOfLosses++;
 				JOptionPane.showMessageDialog(null, "You Lost :(");
@@ -121,14 +127,27 @@ public class GameInterface
 	 */
 	public void initialize()
 	{
+	      int messageType = JOptionPane.QUESTION_MESSAGE;
+	      String[] options = {"X","O"};
+	      int choice = JOptionPane.showOptionDialog(null, 
+	         "X goes first, O goes second", 
+	         "Choose your turn", 0, messageType, 
+	         null, options, "X");
+	      if(choice == 0){
+	    	  player = 'x';
+	    	  computer = 'o';
+	      }
+	      else if(choice == 1){
+	    	  player = 'o';
+	    	  computer = 'x';
+	      }
 		GameFrame = new JFrame();
 		GameFrame.setTitle("Tic Tac Toe");
 		GameFrame.setResizable(false);
 		GameFrame.setBounds(100, 100, 380, 476);
 		GameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GameFrame.getContentPane().setLayout(null);
-		game = new Game();
-		
+		game = new Game(player, computer);
 		XOButton button00 = new XOButton(0,0);
 		buttonsList.add(button00);
 		button00.addActionListener(new ActionListener()
@@ -356,5 +375,9 @@ public class GameInterface
 		lblNumberOfTies = new JLabel("0");
 		lblNumberOfTies.setBounds(232, 381, 27, 14);
 		GameFrame.getContentPane().add(lblNumberOfTies);
+		
+		if(computer == 'x'){
+			computerPlay(game.generateComputerMove());
+		}
 	}
 }

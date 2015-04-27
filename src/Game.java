@@ -8,31 +8,51 @@ public class Game
 	private AI ai;
 	private int turnsCounter;
 	private char winner;
-	public Game(){
+	private char player;
+	private char computer;
+	public Game(char player, char computer){
+		setPlayer(player);
+		setComputer(computer);
 		resetBoard();
+	}
+	public void setPlayer(char player){
+		this.player = player;
+	}
+	public void setComputer(char computer){
+		this.computer = computer;
 	}
 	public char getWinner()
 	{
 		return winner;
 	}
+	public Location generateComputerMove(){
+		while(true)
+		{
+			//Location computerMove = ai.move();
+			//row =computerMove.getX();
+			//col = computerMove.getY();
+			Random random = new Random();
+		 row = random.nextInt(4);
+			col = random.nextInt(4);
+			if(isFree(row,col))
+			{
+			board[row][col]=computer;
+			break;
+			}
+		}
+		return new Location(row,col);
+	}
 	public Location play(Location location)
 	{
 		 row = location.getX();
 		 col = location.getY();
-		board[row][col]='x';
-		while(true)
-		{
-			row = ai.move().getX();
-			col = ai.move().getY();
-			if(isFree(row,col))
-			{
-			board[row][col]='o';
-			break;
-			}
-		}
+		board[row][col]=player;
+		
 		turnsCounter++;
-		return new Location(row,col);
+		return generateComputerMove();
 	}
+	
+	
 	
 	/* returns -1 when the game is over with no winner,
 	 * returns 1 when the game is over and there is a winner,
@@ -40,15 +60,15 @@ public class Game
 	 */
 	public int isGameOver()
 	{
-		if(turnsCounter == 8)
+		if(isThereAWinner())
+		{
+			return 1;
+		}
+		else if(turnsCounter == 8)
 		{
 			return -1;
 		}
-		if(isThereAWinner())
-		{
-			System.out.println(isThereAWinner());
-			return 1;
-		}
+		else
 		return 0;
 	}
 	
