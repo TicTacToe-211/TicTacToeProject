@@ -88,7 +88,6 @@ public class AI
 		}
 		return null;
 	}
-	//turned method into private because it's not accessed by other classes
 	private Location block()
 	{
 		if(firstRowBlock() != null)

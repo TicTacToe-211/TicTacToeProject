@@ -17,22 +17,21 @@ public class Game
 	}
 	public Location play(Location location)
 	{
-		 col = location.getX();
-		 row = location.getY();
-		board[col][row]='x';
+		 row = location.getX();
+		 col = location.getY();
+		board[row][col]='x';
 		while(true)
 		{
-			Random random = new Random();
-			 col = random.nextInt(4);
-			 row = random.nextInt(4);
-			if(isFree(col,row))
+			row = ai.move().getX();
+			col = ai.move().getY();
+			if(isFree(row,col))
 			{
-			board[col][row]='o';
+			board[row][col]='o';
 			break;
 			}
 		}
 		turnsCounter++;
-		return new Location(col,row);
+		return new Location(row,col);
 	}
 	
 	/* returns -1 when the game is over with no winner,
@@ -79,7 +78,7 @@ public class Game
 			&& board[i][2]==board[i][3]
 			&& board[i][0]!=' ')
 			{
-				//checks for columns
+				//checks for cols
 				winner = board[i][0];
 			return true;
 			}
@@ -88,7 +87,7 @@ public class Game
 			&& board[2][i]==board[3][i]
 			&& board[0][i]!=' ')
 			{
-				//check for rows
+				//check for cols
 				winner = board[0][i];
 				return true;
 			}	
