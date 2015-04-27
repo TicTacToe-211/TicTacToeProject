@@ -5,6 +5,7 @@ public class Game
 	public static char [][] board = new char[4][4];
 	private int row;
 	private int col;
+	private AI ai;
 	private int turnsCounter;
 	private char winner;
 	public Game(){
