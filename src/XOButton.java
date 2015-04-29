@@ -3,8 +3,8 @@ import javax.swing.JButton;
 
 public class XOButton extends JButton {
 	private Location location;
-	ImageIcon x;
-	ImageIcon o;
+	private ImageIcon x;
+	private ImageIcon o;
 	char value;
 
 	public XOButton() {
