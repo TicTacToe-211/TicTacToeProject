@@ -1,0 +1,500 @@
+src/AI.java:3:	All classes and interfaces must belong to a named package
+src/AI.java:3:	Avoid short class names like AI
+src/AI.java:3:	The class 'AI' has a Cyclomatic Complexity of 7 (Highest = 13).
+src/AI.java:3:	The class 'AI' has a Cyclomatic Complexity of 7 (Highest = 13).
+src/AI.java:3:	This class has too many methods, consider refactoring it.
+src/AI.java:3:	This class has too many methods, consider refactoring it.
+src/AI.java:3:	headerCommentRequirement Required
+src/AI.java:4:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AI.java:4:	Private field 'game' could be made final; it is only initialized in the declaration or constructor.
+src/AI.java:4:	fieldCommentRequirement Required
+src/AI.java:6:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AI.java:6:	fieldCommentRequirement Required
+src/AI.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AI.java:7:	Use explicit scoping instead of the default package private level
+src/AI.java:7:	fieldCommentRequirement Required
+src/AI.java:9:	Parameter 'game' is not assigned and could be declared final
+src/AI.java:9:	publicMethodCommentRequirement Required
+src/AI.java:15:	Parameter 'iterator' is not assigned and could be declared final
+src/AI.java:17:	Avoid if (x != y) ..; else ..;
+src/AI.java:18:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:22:	Avoid if (x != y) ..; else ..;
+src/AI.java:23:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:35:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:38:	Avoid if (x != y) ..; else ..;
+src/AI.java:39:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:47:	Parameter 'iterator' is not assigned and could be declared final
+src/AI.java:49:	Useless parentheses.
+src/AI.java:49:	Useless parentheses.
+src/AI.java:50:	Useless parentheses.
+src/AI.java:50:	Useless parentheses.
+src/AI.java:51:	Useless parentheses.
+src/AI.java:51:	Useless parentheses.
+src/AI.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:54:	Useless parentheses.
+src/AI.java:54:	Useless parentheses.
+src/AI.java:55:	Useless parentheses.
+src/AI.java:55:	Useless parentheses.
+src/AI.java:56:	Useless parentheses.
+src/AI.java:56:	Useless parentheses.
+src/AI.java:58:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:65:	Parameter 'iterator' is not assigned and could be declared final
+src/AI.java:66:	Useless parentheses.
+src/AI.java:66:	Useless parentheses.
+src/AI.java:67:	Useless parentheses.
+src/AI.java:67:	Useless parentheses.
+src/AI.java:68:	Useless parentheses.
+src/AI.java:68:	Useless parentheses.
+src/AI.java:70:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:71:	Useless parentheses.
+src/AI.java:71:	Useless parentheses.
+src/AI.java:72:	Useless parentheses.
+src/AI.java:72:	Useless parentheses.
+src/AI.java:73:	Useless parentheses.
+src/AI.java:73:	Useless parentheses.
+src/AI.java:75:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:81:	The method 'checkNegativeSlopeDiagonal' has a Cyclomatic Complexity of 13.
+src/AI.java:81:	The method 'checkNegativeSlopeDiagonal' has a Cyclomatic Complexity of 13.
+src/AI.java:82:	Useless parentheses.
+src/AI.java:82:	Useless parentheses.
+src/AI.java:83:	Useless parentheses.
+src/AI.java:83:	Useless parentheses.
+src/AI.java:85:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:86:	Useless parentheses.
+src/AI.java:86:	Useless parentheses.
+src/AI.java:87:	Useless parentheses.
+src/AI.java:87:	Useless parentheses.
+src/AI.java:89:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:90:	Useless parentheses.
+src/AI.java:90:	Useless parentheses.
+src/AI.java:91:	Useless parentheses.
+src/AI.java:91:	Useless parentheses.
+src/AI.java:93:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:94:	Useless parentheses.
+src/AI.java:94:	Useless parentheses.
+src/AI.java:95:	Useless parentheses.
+src/AI.java:95:	Useless parentheses.
+src/AI.java:97:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:103:	The method 'checkPositiveSlopeDiagonal' has a Cyclomatic Complexity of 13.
+src/AI.java:103:	The method 'checkPositiveSlopeDiagonal' has a Cyclomatic Complexity of 13.
+src/AI.java:104:	Useless parentheses.
+src/AI.java:104:	Useless parentheses.
+src/AI.java:105:	Useless parentheses.
+src/AI.java:105:	Useless parentheses.
+src/AI.java:107:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:108:	Useless parentheses.
+src/AI.java:108:	Useless parentheses.
+src/AI.java:109:	Useless parentheses.
+src/AI.java:109:	Useless parentheses.
+src/AI.java:111:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:112:	Useless parentheses.
+src/AI.java:112:	Useless parentheses.
+src/AI.java:113:	Useless parentheses.
+src/AI.java:113:	Useless parentheses.
+src/AI.java:115:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:116:	Useless parentheses.
+src/AI.java:116:	Useless parentheses.
+src/AI.java:117:	Useless parentheses.
+src/AI.java:117:	Useless parentheses.
+src/AI.java:119:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:126:	Parameter 'iterator' is not assigned and could be declared final
+src/AI.java:128:	Avoid if (x != y) ..; else ..;
+src/AI.java:129:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:133:	Avoid if (x != y) ..; else ..;
+src/AI.java:134:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:142:	Parameter 'iterator' is not assigned and could be declared final
+src/AI.java:143:	Useless parentheses.
+src/AI.java:143:	Useless parentheses.
+src/AI.java:144:	Useless parentheses.
+src/AI.java:144:	Useless parentheses.
+src/AI.java:145:	Useless parentheses.
+src/AI.java:145:	Useless parentheses.
+src/AI.java:147:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:148:	Useless parentheses.
+src/AI.java:148:	Useless parentheses.
+src/AI.java:149:	Useless parentheses.
+src/AI.java:149:	Useless parentheses.
+src/AI.java:150:	Useless parentheses.
+src/AI.java:150:	Useless parentheses.
+src/AI.java:152:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:159:	Parameter 'iterator' is not assigned and could be declared final
+src/AI.java:160:	Useless parentheses.
+src/AI.java:160:	Useless parentheses.
+src/AI.java:161:	Useless parentheses.
+src/AI.java:161:	Useless parentheses.
+src/AI.java:162:	Useless parentheses.
+src/AI.java:162:	Useless parentheses.
+src/AI.java:164:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:165:	Useless parentheses.
+src/AI.java:165:	Useless parentheses.
+src/AI.java:166:	Useless parentheses.
+src/AI.java:166:	Useless parentheses.
+src/AI.java:167:	Useless parentheses.
+src/AI.java:167:	Useless parentheses.
+src/AI.java:169:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:177:	Use one line for each declaration, it enhances code readability.
+src/AI.java:180:	Avoid instantiating new objects inside loops
+src/AI.java:180:	Local variable 'random' could be declared final
+src/AI.java:181:	Potential violation of Law of Demeter (object not created locally)
+src/AI.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/AI.java:188:	Parameter 'game' is not assigned and could be declared final
+src/AI.java:188:	publicMethodCommentRequirement Required
+src/AI.java:198:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:202:	A method should have only one exit point, and that should be the last statement in the method
+src/AI.java:208:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:1:	All classes and interfaces must belong to a named package
+src/Game.java:1:	Avoid short class names like Game
+src/Game.java:1:	headerCommentRequirement Required
+src/Game.java:2:	fieldCommentRequirement Required
+src/Game.java:3:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Game.java:3:	fieldCommentRequirement Required
+src/Game.java:4:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Game.java:4:	fieldCommentRequirement Required
+src/Game.java:5:	fieldCommentRequirement Required
+src/Game.java:6:	fieldCommentRequirement Required
+src/Game.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Game.java:7:	Private field 'computerAI' could be made final; it is only initialized in the declaration or constructor.
+src/Game.java:7:	fieldCommentRequirement Required
+src/Game.java:9:	Parameter 'computer' is not assigned and could be declared final
+src/Game.java:9:	Parameter 'player' is not assigned and could be declared final
+src/Game.java:9:	publicMethodCommentRequirement Required
+src/Game.java:10:	Useless parentheses.
+src/Game.java:10:	Useless parentheses.
+src/Game.java:10:	Useless parentheses.
+src/Game.java:10:	Useless parentheses.
+src/Game.java:11:	Useless parentheses.
+src/Game.java:11:	Useless parentheses.
+src/Game.java:11:	Useless parentheses.
+src/Game.java:11:	Useless parentheses.
+src/Game.java:14:	Overridable method 'resetBoard' called during object construction
+src/Game.java:18:	Parameter 'column' is not assigned and could be declared final
+src/Game.java:19:	Useless parentheses.
+src/Game.java:19:	Useless parentheses.
+src/Game.java:20:	Useless parentheses.
+src/Game.java:20:	Useless parentheses.
+src/Game.java:21:	Useless parentheses.
+src/Game.java:21:	Useless parentheses.
+src/Game.java:22:	Useless parentheses.
+src/Game.java:22:	Useless parentheses.
+src/Game.java:25:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:32:	Useless parentheses.
+src/Game.java:32:	Useless parentheses.
+src/Game.java:33:	Useless parentheses.
+src/Game.java:33:	Useless parentheses.
+src/Game.java:34:	Useless parentheses.
+src/Game.java:34:	Useless parentheses.
+src/Game.java:35:	Useless parentheses.
+src/Game.java:35:	Useless parentheses.
+src/Game.java:37:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:44:	Useless parentheses.
+src/Game.java:44:	Useless parentheses.
+src/Game.java:45:	Useless parentheses.
+src/Game.java:45:	Useless parentheses.
+src/Game.java:46:	Useless parentheses.
+src/Game.java:46:	Useless parentheses.
+src/Game.java:47:	Useless parentheses.
+src/Game.java:47:	Useless parentheses.
+src/Game.java:49:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:55:	Parameter 'row' is not assigned and could be declared final
+src/Game.java:56:	Useless parentheses.
+src/Game.java:56:	Useless parentheses.
+src/Game.java:57:	Useless parentheses.
+src/Game.java:57:	Useless parentheses.
+src/Game.java:58:	Useless parentheses.
+src/Game.java:58:	Useless parentheses.
+src/Game.java:59:	Useless parentheses.
+src/Game.java:59:	Useless parentheses.
+src/Game.java:62:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:68:	publicMethodCommentRequirement Required
+src/Game.java:69:	Local variable 'computerMove' could be declared final
+src/Game.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/Game.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/Game.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/Game.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/Game.java:74:	publicMethodCommentRequirement Required
+src/Game.java:78:	publicMethodCommentRequirement Required
+src/Game.java:87:	publicMethodCommentRequirement Required
+src/Game.java:91:	publicMethodCommentRequirement Required
+src/Game.java:96:	Parameter 'col' is not assigned and could be declared final
+src/Game.java:96:	Parameter 'row' is not assigned and could be declared final
+src/Game.java:96:	publicMethodCommentRequirement Required
+src/Game.java:97:	Avoid unnecessary if..then..else statements when returning booleans
+src/Game.java:97:	Useless parentheses.
+src/Game.java:97:	Useless parentheses.
+src/Game.java:97:	Useless parentheses.
+src/Game.java:97:	Useless parentheses.
+src/Game.java:98:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:108:	publicMethodCommentRequirement Required
+src/Game.java:110:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:111:	Avoid using Literals in Conditional Statements
+src/Game.java:112:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:122:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:124:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:128:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:129:	Avoid unnecessary if..then..else statements when returning booleans
+src/Game.java:130:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:136:	Parameter 'location' is not assigned and could be declared final
+src/Game.java:136:	publicMethodCommentRequirement Required
+src/Game.java:138:	Local variable 'row' could be declared final
+src/Game.java:139:	Local variable 'col' could be declared final
+src/Game.java:143:	Avoid using Literals in Conditional Statements
+src/Game.java:144:	A method should have only one exit point, and that should be the last statement in the method
+src/Game.java:150:	publicMethodCommentRequirement Required
+src/Game.java:161:	Avoid variables with short names like b
+src/Game.java:161:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/Game.java:161:	Parameter 'b' is not assigned and could be declared final
+src/Game.java:161:	The user-supplied array 'b' is stored directly.
+src/Game.java:161:	publicMethodCommentRequirement Required
+src/Game.java:165:	Parameter 'computer' is not assigned and could be declared final
+src/Game.java:165:	publicMethodCommentRequirement Required
+src/Game.java:166:	Useless parentheses.
+src/Game.java:166:	Useless parentheses.
+src/Game.java:166:	Useless parentheses.
+src/Game.java:166:	Useless parentheses.
+src/Game.java:170:	Parameter 'player' is not assigned and could be declared final
+src/Game.java:170:	publicMethodCommentRequirement Required
+src/Game.java:171:	Useless parentheses.
+src/Game.java:171:	Useless parentheses.
+src/Game.java:171:	Useless parentheses.
+src/Game.java:171:	Useless parentheses.
+src/GameInterface.java:11:	All classes and interfaces must belong to a named package
+src/GameInterface.java:11:	The class 'GameInterface' has a Cyclomatic Complexity of 5 (Highest = 21).
+src/GameInterface.java:11:	The class 'GameInterface' has a Cyclomatic Complexity of 5 (Highest = 21).
+src/GameInterface.java:11:	The class 'GameInterface' has a Modified Cyclomatic Complexity of 5 (Highest = 21).
+src/GameInterface.java:11:	The class 'GameInterface' has a Standard Cyclomatic Complexity of 5 (Highest = 21).
+src/GameInterface.java:11:	This class has too many methods, consider refactoring it.
+src/GameInterface.java:11:	This class has too many methods, consider refactoring it.
+src/GameInterface.java:11:	headerCommentRequirement Required
+src/GameInterface.java:15:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/GameInterface.java:15:	Parameter 'args' is not assigned and could be declared final
+src/GameInterface.java:16:	To be compliant to J2EE, a webapp should not use any thread.
+src/GameInterface.java:18:	publicMethodCommentRequirement Required
+src/GameInterface.java:20:	Local variable 'window' could be declared final
+src/GameInterface.java:21:	Potential violation of Law of Demeter (static property access)
+src/GameInterface.java:22:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/GameInterface.java:23:	Avoid printStackTrace(); use a logger call instead.
+src/GameInterface.java:29:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:29:	Variables should start with a lowercase character, 'GameFrame' starts with uppercase character.
+src/GameInterface.java:29:	fieldCommentRequirement Required
+src/GameInterface.java:30:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:30:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:30:	fieldCommentRequirement Required
+src/GameInterface.java:31:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:31:	Perhaps 'computerMove' could be replaced by a local variable.
+src/GameInterface.java:31:	fieldCommentRequirement Required
+src/GameInterface.java:32:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/GameInterface.java:32:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:32:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:32:	Private field 'buttonsList' could be made final; it is only initialized in the declaration or constructor.
+src/GameInterface.java:32:	fieldCommentRequirement Required
+src/GameInterface.java:36:	Avoid unused private fields such as 'countersList'.
+src/GameInterface.java:36:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/GameInterface.java:36:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:36:	Private field 'countersList' could be made final; it is only initialized in the declaration or constructor.
+src/GameInterface.java:36:	fieldCommentRequirement Required
+src/GameInterface.java:40:	Avoid using redundant field initializer for 'numberOfWins'
+src/GameInterface.java:40:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:40:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:40:	fieldCommentRequirement Required
+src/GameInterface.java:41:	Avoid using redundant field initializer for 'numberOfLosses'
+src/GameInterface.java:41:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:41:	fieldCommentRequirement Required
+src/GameInterface.java:42:	Avoid using redundant field initializer for 'numberOfTies'
+src/GameInterface.java:42:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:42:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:42:	fieldCommentRequirement Required
+src/GameInterface.java:43:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:43:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:43:	fieldCommentRequirement Required
+src/GameInterface.java:44:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:44:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:44:	fieldCommentRequirement Required
+src/GameInterface.java:45:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:45:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:45:	fieldCommentRequirement Required
+src/GameInterface.java:46:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:46:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:46:	fieldCommentRequirement Required
+src/GameInterface.java:48:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/GameInterface.java:48:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/GameInterface.java:48:	fieldCommentRequirement Required
+src/GameInterface.java:54:	Overridable method 'initialize' called during object construction
+src/GameInterface.java:58:	Parameter 'computerMove' is not assigned and could be declared final
+src/GameInterface.java:63:	Found 'UR'-anomaly for variable 'button' (lines '63'-'66').
+src/GameInterface.java:63:	Parameter 'location' is not assigned and could be declared final
+src/GameInterface.java:65:	Local variable 'button' could be declared final
+src/GameInterface.java:66:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:67:	A method should have only one exit point, and that should be the last statement in the method
+src/GameInterface.java:76:	Avoid really long methods.
+src/GameInterface.java:76:	Avoid really long methods.
+src/GameInterface.java:76:	The method 'initialize' has a Cyclomatic Complexity of 21.
+src/GameInterface.java:76:	The method 'initialize' has a Cyclomatic Complexity of 21.
+src/GameInterface.java:76:	The method 'initialize' has a Modified Cyclomatic Complexity of 21.
+src/GameInterface.java:76:	The method 'initialize' has a Standard Cyclomatic Complexity of 21.
+src/GameInterface.java:76:	The method initialize() has an NCSS line count of 122
+src/GameInterface.java:76:	The method initialize() has an NCSS line count of 122
+src/GameInterface.java:85:	Local variable 'messageType' could be declared final
+src/GameInterface.java:86:	Local variable 'options' could be declared final
+src/GameInterface.java:87:	Local variable 'choice' could be declared final
+src/GameInterface.java:87:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:93:	Avoid using Literals in Conditional Statements
+src/GameInterface.java:99:	Local variable 'button00' could be declared final
+src/GameInterface.java:103:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:103:	publicMethodCommentRequirement Required
+src/GameInterface.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:110:	Local variable 'button01' could be declared final
+src/GameInterface.java:114:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:114:	publicMethodCommentRequirement Required
+src/GameInterface.java:115:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:115:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:121:	Local variable 'button02' could be declared final
+src/GameInterface.java:125:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:125:	publicMethodCommentRequirement Required
+src/GameInterface.java:126:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:126:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:132:	Local variable 'button03' could be declared final
+src/GameInterface.java:136:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:136:	publicMethodCommentRequirement Required
+src/GameInterface.java:137:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:137:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:143:	Local variable 'button10' could be declared final
+src/GameInterface.java:147:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:147:	publicMethodCommentRequirement Required
+src/GameInterface.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:154:	Local variable 'button11' could be declared final
+src/GameInterface.java:158:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:158:	publicMethodCommentRequirement Required
+src/GameInterface.java:159:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:159:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:165:	Local variable 'button12' could be declared final
+src/GameInterface.java:169:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:169:	publicMethodCommentRequirement Required
+src/GameInterface.java:170:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:170:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:176:	Local variable 'button13' could be declared final
+src/GameInterface.java:180:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:180:	publicMethodCommentRequirement Required
+src/GameInterface.java:181:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:181:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:187:	Local variable 'button20' could be declared final
+src/GameInterface.java:191:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:191:	publicMethodCommentRequirement Required
+src/GameInterface.java:192:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:192:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:198:	Local variable 'button21' could be declared final
+src/GameInterface.java:202:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:202:	publicMethodCommentRequirement Required
+src/GameInterface.java:203:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:203:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:209:	Local variable 'button22' could be declared final
+src/GameInterface.java:213:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:213:	publicMethodCommentRequirement Required
+src/GameInterface.java:214:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:214:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:220:	Local variable 'button23' could be declared final
+src/GameInterface.java:224:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:224:	publicMethodCommentRequirement Required
+src/GameInterface.java:225:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:225:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:231:	Local variable 'button30' could be declared final
+src/GameInterface.java:235:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:235:	publicMethodCommentRequirement Required
+src/GameInterface.java:236:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:236:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:242:	Local variable 'button31' could be declared final
+src/GameInterface.java:246:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:246:	publicMethodCommentRequirement Required
+src/GameInterface.java:247:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:247:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:253:	Local variable 'button32' could be declared final
+src/GameInterface.java:257:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:257:	publicMethodCommentRequirement Required
+src/GameInterface.java:258:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:258:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:264:	Local variable 'button33' could be declared final
+src/GameInterface.java:268:	Parameter 'arg0' is not assigned and could be declared final
+src/GameInterface.java:268:	publicMethodCommentRequirement Required
+src/GameInterface.java:269:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:269:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:275:	Local variable 'btnExit' could be declared final
+src/GameInterface.java:278:	Avoid variables with short names like e
+src/GameInterface.java:278:	Parameter 'e' is not assigned and could be declared final
+src/GameInterface.java:278:	publicMethodCommentRequirement Required
+src/GameInterface.java:279:	System.exit() should not be used in J2EE/JEE apps
+src/GameInterface.java:285:	Local variable 'lblWins' could be declared final
+src/GameInterface.java:289:	Local variable 'lblLosses' could be declared final
+src/GameInterface.java:293:	Local variable 'lblTies' could be declared final
+src/GameInterface.java:309:	Avoid using Literals in Conditional Statements
+src/GameInterface.java:321:	Avoid using Literals in Conditional Statements
+src/GameInterface.java:337:	Found 'UR'-anomaly for variable 'button' (lines '337'-'340').
+src/GameInterface.java:339:	Local variable 'button' could be declared final
+src/GameInterface.java:343:	Avoid using Literals in Conditional Statements
+src/GameInterface.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:347:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:348:	Potential violation of Law of Demeter (method chain calls)
+src/GameInterface.java:352:	Method names should not start with capital letters
+src/GameInterface.java:352:	Parameter 'button' is not assigned and could be declared final
+src/GameInterface.java:354:	Potential violation of Law of Demeter (method chain calls)
+src/Location.java:1:	All classes and interfaces must belong to a named package
+src/Location.java:1:	headerCommentRequirement Required
+src/Location.java:2:	Avoid variables with short names like x
+src/Location.java:2:	fieldCommentRequirement Required
+src/Location.java:3:	Avoid variables with short names like y
+src/Location.java:3:	fieldCommentRequirement Required
+src/Location.java:5:	Document empty constructor
+src/Location.java:5:	publicMethodCommentRequirement Required
+src/Location.java:8:	Avoid variables with short names like x
+src/Location.java:8:	Parameter 'x' is not assigned and could be declared final
+src/Location.java:8:	publicMethodCommentRequirement Required
+src/Location.java:12:	Avoid variables with short names like y
+src/Location.java:12:	Parameter 'y' is not assigned and could be declared final
+src/Location.java:12:	publicMethodCommentRequirement Required
+src/Location.java:16:	Avoid variables with short names like x
+src/Location.java:16:	Avoid variables with short names like y
+src/Location.java:16:	Parameter 'x' is not assigned and could be declared final
+src/Location.java:16:	Parameter 'y' is not assigned and could be declared final
+src/Location.java:16:	publicMethodCommentRequirement Required
+src/Location.java:21:	publicMethodCommentRequirement Required
+src/Location.java:25:	publicMethodCommentRequirement Required
+src/Location.java:29:	Parameter 'otherLocation' is not assigned and could be declared final
+src/Location.java:29:	publicMethodCommentRequirement Required
+src/Location.java:31:	A method should have only one exit point, and that should be the last statement in the method
+src/Location.java:33:	Avoid using if...else statements without curly braces
+src/Location.java:33:	Avoid using if...else statements without curly braces
+src/Location.java:36:	publicMethodCommentRequirement Required
+src/XOButton.java:4:	All classes and interfaces must belong to a named package
+src/XOButton.java:4:	headerCommentRequirement Required
+src/XOButton.java:5:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/XOButton.java:5:	fieldCommentRequirement Required
+src/XOButton.java:6:	Avoid variables with short names like x
+src/XOButton.java:6:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/XOButton.java:6:	Use explicit scoping instead of the default package private level
+src/XOButton.java:6:	fieldCommentRequirement Required
+src/XOButton.java:7:	Avoid variables with short names like o
+src/XOButton.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/XOButton.java:7:	Use explicit scoping instead of the default package private level
+src/XOButton.java:7:	fieldCommentRequirement Required
+src/XOButton.java:8:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/XOButton.java:8:	Use explicit scoping instead of the default package private level
+src/XOButton.java:8:	fieldCommentRequirement Required
+src/XOButton.java:10:	Document empty constructor
+src/XOButton.java:10:	It is a good practice to call super() in a constructor
+src/XOButton.java:10:	publicMethodCommentRequirement Required
+src/XOButton.java:14:	Avoid variables with short names like x
+src/XOButton.java:14:	Avoid variables with short names like y
+src/XOButton.java:14:	It is a good practice to call super() in a constructor
+src/XOButton.java:14:	Parameter 'x' is not assigned and could be declared final
+src/XOButton.java:14:	Parameter 'y' is not assigned and could be declared final
+src/XOButton.java:14:	publicMethodCommentRequirement Required
+src/XOButton.java:20:	publicMethodCommentRequirement Required
+src/XOButton.java:24:	Parameter 'value' is not assigned and could be declared final
+src/XOButton.java:24:	publicMethodCommentRequirement Required
+src/XOButton.java:25:	Useless parentheses.
+src/XOButton.java:25:	Useless parentheses.
+src/XOButton.java:25:	Useless parentheses.
+src/XOButton.java:25:	Useless parentheses.
