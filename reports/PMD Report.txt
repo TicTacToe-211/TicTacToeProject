@@ -1,0 +1,85 @@
+Found a 4 line (61 tokens) duplication in the following files: 
+Starting at line 64 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 158 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+	private Location checkMiddlesOfRows(int iterator) {
+		if ((this.board[iterator][0] != ' ')
+				&& (this.board[iterator][0] == this.board[iterator][1])
+				&& (this.board[iterator][1] == this.board[iterator][3])
+=====================================================================
+Found a 3 line (53 tokens) duplication in the following files: 
+Starting at line 53 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 142 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		} else if ((this.board[0][iterator] != ' ')
+				&& (this.board[0][iterator] == this.board[1][iterator])
+				&& (this.board[1][iterator] == this.board[3][iterator])
+=====================================================================
+Found a 3 line (44 tokens) duplication in the following files: 
+Starting at line 49 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 148 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+				&& (this.board[0][iterator] == this.board[2][iterator])
+				&& (this.board[2][iterator] == this.board[3][iterator])
+				&& this.game.isFree(1, iterator)) {
+=====================================================================
+Found a 3 line (43 tokens) duplication in the following files: 
+Starting at line 71 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 165 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+				&& (this.board[iterator][0] == this.board[iterator][2])
+				&& (this.board[iterator][2] == this.board[iterator][3])
+				&& this.game.isFree(iterator, 1)) {
+=====================================================================
+Found a 3 line (41 tokens) duplication in the following files: 
+Starting at line 81 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 85 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		if ((this.board[3][0] == this.board[2][1])
+				&& (this.board[2][1] == this.board[1][2])
+				&& this.game.isFree(0, 3)) {
+=====================================================================
+Found a 3 line (41 tokens) duplication in the following files: 
+Starting at line 107 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 111 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		} else if ((this.board[1][1] == this.board[2][2])
+				&& (this.board[2][2] == this.board[3][3])
+				&& this.game.isFree(0, 0)) {
+=====================================================================
+Found a 2 line (39 tokens) duplication in the following files: 
+Starting at line 81 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 93 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		if ((this.board[3][0] == this.board[2][1])
+				&& (this.board[2][1] == this.board[1][2])
+=====================================================================
+Found a 2 line (39 tokens) duplication in the following files: 
+Starting at line 103 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 115 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		if ((this.board[0][0] == this.board[1][1])
+				&& (this.board[1][1] == this.board[2][2])
+=====================================================================
+Found a 3 line (36 tokens) duplication in the following files: 
+Starting at line 47 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 141 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+	private Location checkMiddlesOfColumns(int iterator) {
+		if ((this.board[0][iterator] != ' ')
+				&& (this.board[0][iterator] == this.board[2][iterator])
+=====================================================================
+Found a 2 line (34 tokens) duplication in the following files: 
+Starting at line 65 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 70 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 159 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		if ((this.board[iterator][0] != ' ')
+				&& (this.board[iterator][0] == this.board[iterator][1])
+=====================================================================
+Found a 2 line (31 tokens) duplication in the following files: 
+Starting at line 48 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+Starting at line 53 of C:\Users\yugim_000\git\TicTacToeProject\src\AI.java
+
+		if ((this.board[0][iterator] != ' ')
+				&& (this.board[0][iterator] == this.board[2][iterator])

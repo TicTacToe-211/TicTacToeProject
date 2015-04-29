@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="TicTacToeProject" type="Project" date="2015-04-29" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "3.18" stddev = "3.103" max = "13" maxinrange="false">
+         <Value name="checkNegativeSlopeDiagonal" source ="AI.java" package ="(default package)" value ="13" inrange="false"/>
+         <Value name="checkPositiveSlopeDiagonal" source ="AI.java" package ="(default package)" value ="13" inrange="false"/>
+         <Value name="checkMiddlesOfColumns" source ="AI.java" package ="(default package)" value ="9"/>
+         <Value name="checkMiddlesOfRows" source ="AI.java" package ="(default package)" value ="9"/>
+         <Value name="checkSidesOfColumns" source ="AI.java" package ="(default package)" value ="9"/>
+         <Value name="checkSidesOfRows" source ="AI.java" package ="(default package)" value ="9"/>
+         <Value name="move" source ="AI.java" package ="(default package)" value ="6"/>
+         <Value name="isThereAWinner" source ="Game.java" package ="(default package)" value ="6"/>
+         <Value name="checkColumnsForWinner" source ="Game.java" package ="(default package)" value ="5"/>
+         <Value name="checkNegativeSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="5"/>
+         <Value name="checkPositiveSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="5"/>
+         <Value name="checkRowsForWinner" source ="Game.java" package ="(default package)" value ="5"/>
+         <Value name="isGameOver" source ="GameInterface.java" package ="(default package)" value ="5"/>
+         <Value name="initialize" source ="GameInterface.java" package ="(default package)" value ="4"/>
+         <Value name="checkColumns" source ="AI.java" package ="(default package)" value ="3"/>
+         <Value name="checkDiagonals" source ="AI.java" package ="(default package)" value ="3"/>
+         <Value name="checkRows" source ="AI.java" package ="(default package)" value ="3"/>
+         <Value name="isFree" source ="Game.java" package ="(default package)" value ="3"/>
+         <Value name="isGameOver" source ="Game.java" package ="(default package)" value ="3"/>
+         <Value name="resetBoard" source ="Game.java" package ="(default package)" value ="3"/>
+         <Value name="compareTo" source ="Location.java" package ="(default package)" value ="3"/>
+         <Value name="setValue" source ="XOButton.java" package ="(default package)" value ="3"/>
+         <Value name="generateRandomLocation" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="play" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="XOButtonPressed" source ="GameInterface.java" package ="(default package)" value ="2"/>
+         <Value name="resetGame" source ="GameInterface.java" package ="(default package)" value ="2"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="generateComputerMove" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getComputer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getPlayer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getWinner" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setComputer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setPlayer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="computerPlay" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getButtonOfLocation" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="getX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="getY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="toString" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="getButtonLocation" source ="XOButton.java" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "0.6" stddev = "0.632" max = "2">
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="isFree" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="2"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="2"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkColumns" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkMiddlesOfColumns" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkMiddlesOfRows" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkRows" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkSidesOfColumns" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkSidesOfRows" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="move" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="checkColumnsForWinner" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="checkRowsForWinner" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="play" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setComputer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setPlayer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="XOButtonPressed" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="computerPlay" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getButtonOfLocation" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="main" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="compareTo" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setValue" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="checkDiagonals" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="checkNegativeSlopeDiagonal" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="checkPositiveSlopeDiagonal" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="generateRandomLocation" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="checkNegativeSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="checkPositiveSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="generateComputerMove" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="getBoard" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="getComputer" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="getPlayer" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="getWinner" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="isGameOver" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="isThereAWinner" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="resetBoard" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="initialize" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="isGameOver" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="resetGame" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="getX" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="getY" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="toString" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+         <Value name="getButtonLocation" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "1" avg = "0.2" stddev = "0.4" max = "1">
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0.025" stddev = "0.05" max = "0.125">
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0.125"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "5" avg = "5" stddev = "0" max = "5">
+         <Value name="(default package)" package ="(default package)" value ="5"/>
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "27" avg = "5.4" stddev = "3.929" max = "13">
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="13"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="5"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="4"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="3"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="2"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="?"/>
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="?"/>
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "1" avg = "0.2" stddev = "0.4" max = "1">
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="691"/>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "159" avg = "31.8" stddev = "27.874" max = "80">
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="80"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="46"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="17"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="10"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="6"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "49" avg = "9.8" stddev = "4.833" max = "18">
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="18"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="12"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="8"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="7"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="4"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "2" stddev = "2" max = "6">
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="6"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="1"/>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "1" stddev = "0" max = "1">
+         <Value name="(default package)" package ="(default package)" value ="1"/>
+         <Value name="(default package)" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1.62" stddev = "0.66" max = "3">
+         <Value name="move" source ="AI.java" package ="(default package)" value ="3"/>
+         <Value name="isThereAWinner" source ="Game.java" package ="(default package)" value ="3"/>
+         <Value name="resetBoard" source ="Game.java" package ="(default package)" value ="3"/>
+         <Value name="isGameOver" source ="GameInterface.java" package ="(default package)" value ="3"/>
+         <Value name="main" source ="GameInterface.java" package ="(default package)" value ="3"/>
+         <Value name="checkColumns" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkDiagonals" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkMiddlesOfColumns" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkMiddlesOfRows" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkNegativeSlopeDiagonal" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkPositiveSlopeDiagonal" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkRows" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkSidesOfColumns" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkSidesOfRows" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="generateRandomLocation" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="checkColumnsForWinner" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="checkNegativeSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="checkPositiveSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="checkRowsForWinner" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="isFree" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="isGameOver" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="play" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="XOButtonPressed" source ="GameInterface.java" package ="(default package)" value ="2"/>
+         <Value name="initialize" source ="GameInterface.java" package ="(default package)" value ="2"/>
+         <Value name="resetGame" source ="GameInterface.java" package ="(default package)" value ="2"/>
+         <Value name="compareTo" source ="Location.java" package ="(default package)" value ="2"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="1"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="generateComputerMove" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getComputer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getPlayer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getWinner" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setComputer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setPlayer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="computerPlay" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getButtonOfLocation" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="getX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="getY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="toString" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="getButtonLocation" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="setValue" source ="XOButton.java" package ="(default package)" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0.602" stddev = "0.171" max = "0.8">
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="0.8"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="0.754"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0.625"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="0.5"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0.333"/>
+      </Values>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "542" avg = "10.84" stddev = "28.874" max = "209">
+         <Value name="initialize" source ="GameInterface.java" package ="(default package)" value ="209"/>
+         <Value name="move" source ="AI.java" package ="(default package)" value ="21"/>
+         <Value name="checkNegativeSlopeDiagonal" source ="AI.java" package ="(default package)" value ="19"/>
+         <Value name="checkPositiveSlopeDiagonal" source ="AI.java" package ="(default package)" value ="19"/>
+         <Value name="setValue" source ="XOButton.java" package ="(default package)" value ="16"/>
+         <Value name="isGameOver" source ="GameInterface.java" package ="(default package)" value ="15"/>
+         <Value name="isThereAWinner" source ="Game.java" package ="(default package)" value ="14"/>
+         <Value name="checkMiddlesOfColumns" source ="AI.java" package ="(default package)" value ="13"/>
+         <Value name="checkMiddlesOfRows" source ="AI.java" package ="(default package)" value ="13"/>
+         <Value name="checkSidesOfColumns" source ="AI.java" package ="(default package)" value ="13"/>
+         <Value name="checkSidesOfRows" source ="AI.java" package ="(default package)" value ="13"/>
+         <Value name="checkColumns" source ="AI.java" package ="(default package)" value ="11"/>
+         <Value name="checkDiagonals" source ="AI.java" package ="(default package)" value ="11"/>
+         <Value name="checkRows" source ="AI.java" package ="(default package)" value ="11"/>
+         <Value name="main" source ="GameInterface.java" package ="(default package)" value ="11"/>
+         <Value name="resetGame" source ="GameInterface.java" package ="(default package)" value ="10"/>
+         <Value name="checkColumnsForWinner" source ="Game.java" package ="(default package)" value ="9"/>
+         <Value name="checkNegativeSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="9"/>
+         <Value name="checkPositiveSlopeDiagonalForWinner" source ="Game.java" package ="(default package)" value ="9"/>
+         <Value name="checkRowsForWinner" source ="Game.java" package ="(default package)" value ="9"/>
+         <Value name="play" source ="Game.java" package ="(default package)" value ="9"/>
+         <Value name="resetBoard" source ="Game.java" package ="(default package)" value ="8"/>
+         <Value name="generateRandomLocation" source ="AI.java" package ="(default package)" value ="7"/>
+         <Value name="isGameOver" source ="Game.java" package ="(default package)" value ="7"/>
+         <Value name="getButtonOfLocation" source ="GameInterface.java" package ="(default package)" value ="7"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="6"/>
+         <Value name="XOButtonPressed" source ="GameInterface.java" package ="(default package)" value ="6"/>
+         <Value name="isFree" source ="Game.java" package ="(default package)" value ="5"/>
+         <Value name="compareTo" source ="Location.java" package ="(default package)" value ="4"/>
+         <Value name="generateComputerMove" source ="Game.java" package ="(default package)" value ="3"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="3"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="2"/>
+         <Value name="setComputer" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="setPlayer" source ="Game.java" package ="(default package)" value ="2"/>
+         <Value name="computerPlay" source ="GameInterface.java" package ="(default package)" value ="2"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="2"/>
+         <Value name="getBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getComputer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getPlayer" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="getWinner" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="setBoard" source ="Game.java" package ="(default package)" value ="1"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="1"/>
+         <Value name="getX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="getY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setX" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="setY" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="toString" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="getButtonLocation" source ="XOButton.java" package ="(default package)" value ="1"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "1" avg = "0.2" stddev = "0.4" max = "1">
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="1"/>
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0" max = "0">
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+         <Value name="(default package)" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="AI" source ="AI.java" package ="(default package)" value ="0"/>
+         <Value name="Game" source ="Game.java" package ="(default package)" value ="0"/>
+         <Value name="GameInterface" source ="GameInterface.java" package ="(default package)" value ="0"/>
+         <Value name="Location" source ="Location.java" package ="(default package)" value ="0"/>
+         <Value name="XOButton" source ="XOButton.java" package ="(default package)" value ="0"/>
+      </Values>
+   </Metric>
+   </Metrics>

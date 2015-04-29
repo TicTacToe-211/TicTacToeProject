@@ -32,10 +32,6 @@ public class GameInterface {
 	private ArrayList<XOButton> buttonsList = new ArrayList<XOButton>(); // arraylist
 	// to
 	// keep
-	// buttons
-	private ArrayList<JLabel> countersList = new ArrayList<JLabel>(); // arraylist
-	// to
-	// keep
 	// counters;
 	private int numberOfWins = 0;
 	private int numberOfLosses = 0;
